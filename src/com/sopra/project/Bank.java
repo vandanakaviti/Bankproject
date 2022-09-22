@@ -2,39 +2,56 @@ package com.sopra.project;
 
 public class Bank {
 	private int bankId;
-	private String bankname;
+	private String bankName;
 	private String accNumber;
+	private double amount;
+	
 	public Bank() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	public Bank(int bankId, String bankname, String accNumber) {
+
+	public Bank(int bankId, String bankName, String accNumber, double amount) {
 		super();
 		this.bankId = bankId;
-		this.bankname = bankname;
+		this.bankName = bankName;
 		this.accNumber = accNumber;
+		this.amount = amount;
 	}
+
 	public int getBankId() {
 		return bankId;
 	}
+
 	public void setBankId(int bankId) {
 		this.bankId = bankId;
 	}
-	public String getBankname() {
-		return bankname;
+
+	public String getBankName() {
+		return bankName;
 	}
-	public void setBankname(String bankname) {
-		this.bankname = bankname;
+
+	public void setBankname(String bankName) {
+		this.bankName = bankName;
 	}
+
 	public String getAccNumber() {
 		return accNumber;
 	}
+
 	public void setAccNumber(String accNumber) {
 		this.accNumber = accNumber;
 	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
 	@Override
 	public String toString() {
-		return "Bank [bankId=" + bankId + ", bankname=" + bankname + ", accNumber=" + accNumber + "]";
+		return "bankId=" + bankId + ", bankName=" + bankName + ", accNumber=" + accNumber + ", amount=" + amount;
 	}
-	
 }

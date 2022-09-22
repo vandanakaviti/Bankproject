@@ -1,4 +1,4 @@
-package com.sopra;
+package com.sopra.project;
 
 public class Test {
 	public static void test1() {
